@@ -61,40 +61,40 @@ div#board > div.white {
 	z-index: 4;
 }
 .white.pawn {
-	background-image: url(images/wp.png);
+	background-image: url(../images/wp.png);
 }
 .black.pawn {
-	background-image: url(images/bp.png);
+	background-image: url(../images/bp.png);
 }
 .white.rook {
-	background-image: url(images/wr.png);
+	background-image: url(../images/wr.png);
 }
 .black.rook {
-	background-image: url(images/br.png);
+	background-image: url(../images/br.png);
 }
 .white.knight {
-	background-image: url(images/wn.png);
+	background-image: url(../images/wn.png);
 }
 .black.knight {
-	background-image: url(images/bn.png);
+	background-image: url(../images/bn.png);
 }
 .white.bishop {
-	background-image: url(images/wb.png);
+	background-image: url(../images/wb.png);
 }
 .black.bishop {
-	background-image: url(images/bb.png);
+	background-image: url(../images/bb.png);
 }
 .white.king {
-	background-image: url(images/wk.png);
+	background-image: url(../images/wk.png);
 }
 .black.king {
-	background-image: url(images/bk.png);
+	background-image: url(../images/bk.png);
 }
 .white.queen {
-	background-image: url(images/wq.png);
+	background-image: url(../images/wq.png);
 }
 .black.queen {
-	background-image: url(images/bq.png);
+	background-image: url(../images/bq.png);
 }
 .allow {
 	position: absolute;
