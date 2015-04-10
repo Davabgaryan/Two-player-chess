@@ -1,0 +1,118 @@
+div#board{
+	width: 640px;
+	height: 640px;
+	position: relative;
+	float: left;
+	margin-right: 50px;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+div#board.flip{
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+div#board > div {
+	width: 80px;
+	height: 80px;
+	float:left;
+	position: relative;
+}
+div#board > div > div{
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+div#board.flip > div > div{
+	-ms-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+div#board > div > span {
+	display: block;
+	padding:2px;
+	height: 76px;
+	width: 76px;
+	float: left;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+div#board.flip > div > span {
+	-ms-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+div#board > div.black > span {
+	color: #C93;
+}
+div#board > div.white > span {
+	color: #630;
+}
+div#board > div.black {
+	background: #630;
+}
+div#board > div.white {
+	background: #C93;
+}
+.figure {
+	height: 80px;
+	width: 80px;
+	background-position: center;
+	position: absolute;
+	z-index: 4;
+}
+.white.pawn {
+	background-image: url(images/wp.png);
+}
+.black.pawn {
+	background-image: url(images/bp.png);
+}
+.white.rook {
+	background-image: url(images/wr.png);
+}
+.black.rook {
+	background-image: url(images/br.png);
+}
+.white.knight {
+	background-image: url(images/wn.png);
+}
+.black.knight {
+	background-image: url(images/bn.png);
+}
+.white.bishop {
+	background-image: url(images/wb.png);
+}
+.black.bishop {
+	background-image: url(images/bb.png);
+}
+.white.king {
+	background-image: url(images/wk.png);
+}
+.black.king {
+	background-image: url(images/bk.png);
+}
+.white.queen {
+	background-image: url(images/wq.png);
+}
+.black.queen {
+	background-image: url(images/bq.png);
+}
+.allow {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background: #0f0;
+	opacity: 0.25;
+	z-index: 5;
+}
+td{
+	width: 100px;
+	text-align: center;
+}
+td.step{
+	width: 30px;
+	text-align: center;
+}
+.steps{
+	max-height: 640px;
+	overflow: auto;
+}
