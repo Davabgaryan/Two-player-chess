@@ -104,6 +104,9 @@ div#board > div.white {
 	opacity: 0.25;
 	z-index: 5;
 }
+.steps table {
+	margin: 5px;
+}
 td{
 	width: 100px;
 	text-align: center;
@@ -113,6 +116,75 @@ td.step{
 	text-align: center;
 }
 .steps{
-	max-height: 640px;
+	max-height: 600px;
 	overflow: auto;
+}
+tr.heading {
+	background: #333;
+	color: #fff;
+}
+#startPos, #exportChessPos, #importChessPos {
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	font: bold 11px Helvetica, Arial, sans-serif;
+	color: #444;
+	line-height: 17px;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px 6px 4px 6px;
+	background: #F3F3F3;
+	border: solid 1px #D9D9D9;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-transition: border .20s;
+	-moz-transition: border .20s;
+	-o-transition: border .20s;
+	transition: border .20s;
+}
+#startPos span, #exportChessPos span, #importChessPos span {
+	color: #FFF !important;
+	padding: 0 17px !important;
+	display: inline-block !important;
+	float: left;
+	line-height: 17px;
+	height: 18px;
+	overflow: hidden;
+	-webkit-transition: color .20s;
+	-moz-transition: color .20s;
+	-o-transition: color .20s;
+	transition: color .20s;
+}
+#startPos {
+	border: 1px solid #3079ED !important;
+	background: #4B8DF8;
+	background: -webkit-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -moz-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -ms-linear-gradient(top, #4C8FFD, #4787ED);
+	background: -o-linear-gradient(top, #4C8FFD, #4787ED);
+}
+#importChessPos {
+	border: 1px solid #29691D !important;
+	background: #3A8E00;
+	background: -webkit-linear-gradient(top, #3C9300, #398A00);
+	background: -moz-linear-gradient(top, #3C9300, #398A00);
+	background: -ms-linear-gradient(top, #3C9300, #398A00);
+	background: -o-linear-gradient(top, #3C9300, #398A00);
+}
+#exportChessPos {
+	border: 1px solid #D14836 !important;
+	background: #D64937;
+	background: -webkit-linear-gradient(top, #DC4A38, #D14836);
+	background: -moz-linear-gradient(top, #DC4A38, #D14836);
+	background: -ms-linear-gradient(top, #DC4A38, #D14836);
+	background: -o-linear-gradient(top, #DC4A38, #D14836);
+}
+#importChessPos span {
+	text-shadow: 0 1px 0 #2D6200 !important;
+}
+#startPos span {
+	text-shadow: 0 1px 0 #2F5BB7 !important;
+}
+#exportChessPos span {
+	text-shadow: 0 1px 0 #B0281A !important;
 }

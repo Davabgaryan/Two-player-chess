@@ -191,13 +191,13 @@ function Chess(config) {
 				$('#board').append('<div class="'+this.color+'" id="'+this.characters[j]+i+'"><span>'+this.characters[j]+i+'</span></div>');
 			};
 		};
-		$('body').append('<button id="importChessPos">Import position</button><button id="exportChessPos">Export position</button><button id="startPos">Start position</button><input type="checkbox" id="doflip"><label for="doflip">Flip the board?</label><div class="steps"><table border="1"></table></div>');
+		$('body').append('<button id="importChessPos"><span>Import position</span></button><button id="exportChessPos"><span>Export position</span></button><button id="startPos"><span>Start position</span></button><input type="checkbox" id="doflip"><label for="doflip">Flip the board?</label><div class="steps"><table border="1"></table></div>');
 		this.board = $("#board");
 	};
 
 	this.startPosition = function() {
 		$('.figure').remove();
-		$('.steps table').empty();
+		$('.steps table').empty().append('<tr class="heading"><td>No.</td><td>White</td><td>Black</td></tr>');
 		for (var i = 0; i < parent.wpawnArea.length; i++) {
 			parent.wpawn.clone().appendTo($('#'+parent.wpawnArea[i]));
 		};
@@ -246,7 +246,7 @@ function Chess(config) {
 		var data = prompt('Insert JSON here');
 		if (data) {
 			$('.figure').remove();
-			$('.steps table').empty();
+			$('.steps table').empty().append('<tr class="heading"><td>No.</td><td>White</td><td>Black</td></tr>');
 			data = JSON.parse(data);
 			parent.color = data.player;
 			parent.allowWRCastling = data.WRCastling;
