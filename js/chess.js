@@ -198,6 +198,7 @@ function Chess(config) {
     this.startPosition = function() {
         $('.figure').remove();
         $('.steps table').empty().append('<tr class="heading"><td>No.</td><td>White</td><td>Black</td></tr>');
+        parent.player = "white";
         for (var i = 0; i < parent.wpawnArea.length; i++) {
             parent.wpawn.clone().appendTo($('#' + parent.wpawnArea[i]));
         };
@@ -712,7 +713,7 @@ function Chess(config) {
                 }, 500);
             /* Check for check */
             if (parent.isAttacked($('.white.king').parent().attr('id'), 'white') || parent.isAttacked($('.black.king').parent().attr('id'), 'black')) {
-                alert('Check!')l
+                alert('Check!')
             };
             parent.bindEvents();
         });
