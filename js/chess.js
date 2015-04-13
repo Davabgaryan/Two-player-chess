@@ -198,6 +198,7 @@ function Chess(config) {
 	this.startPosition = function() {
 		$('.figure').remove();
 		$('.steps table').empty().append('<tr class="heading"><td>No.</td><td>White</td><td>Black</td></tr>');
+		parent.step = 1;
 		for (var i = 0; i < parent.wpawnArea.length; i++) {
 			parent.wpawn.clone().appendTo($('#'+parent.wpawnArea[i]));
 		};
@@ -247,6 +248,7 @@ function Chess(config) {
 		if (data) {
 			$('.figure').remove();
 			$('.steps table').empty().append('<tr class="heading"><td>No.</td><td>White</td><td>Black</td></tr>');
+			parent.step = 1;
 			data = JSON.parse(data);
 			parent.color = data.player;
 			parent.allowWRCastling = data.WRCastling;
