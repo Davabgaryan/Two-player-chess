@@ -48,7 +48,7 @@ function Chess(config) {
 		var num = Number(field.slice(-1));
 		var character = field.substring(0,1);
 		var charIndex = parent.characters.indexOf(character);
-		if (parent.color == "white"){
+		if (color == "white"){
 			var sign = 1;
 		} else {
 			var sign = -1;
